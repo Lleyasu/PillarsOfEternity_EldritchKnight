@@ -1,0 +1,198 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.ModalGroupGameData, Assembly-CSharp",
+			"DebugName": "MG_Spell_Dancer_Attunements",
+			"ID": "dd5c0112-3c16-5e88-b5bd-605a17fa2efd",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModalGroupComponent, Assembly-CSharp",
+					"DisplayName": 8989,
+					"MustBeActive": "true"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Eldritch_Knight",
+			"ID": "d71fb889-8f74-4b15-ab45-bf2987bb1cc8",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"DisplayName": 9000,
+					"Description": 9001,
+					"DescriptionTactical": -1,
+					"UpgradeDescriptions": [
+						{
+							"String": 9002,
+							"StringTactical": -1
+						}
+					],
+					"UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+					"Vocalization": "NoVocalization",
+					"Icon": "gui/icons/abilities/talents/class_wizard.png",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+					"AbilityLevel": 0,
+					"IsPassive": "true",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "false",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "false",
+					"ShowStatusEffects": "false",
+					"HideFromCombatLog": "false",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 0,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"c6a77382-56f8-4a7e-877f-e35c20cc3d7b",
+						"b2ced57d-ef9c-0fe1-ace3-3d842c23930a"
+					],
+					"RandomizeStatusEffect": "false",
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "00000000-0000-0000-0000-000000000000",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"GrantedViaScript": "false"
+				},
+				{
+					"$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Attunements",
+			"ID": "723bbbf4-8452-4c0e-8880-222b3b395091",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"DisplayName": 9010,
+					"Description": 9011,
+					"DescriptionTactical": -1,
+					"UpgradeDescriptions": [],
+					"UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+					"Vocalization": "NoVocalization",
+					"Icon": "gui/icons/abilities/paladin/light_of_the_beyond.png",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+					"AbilityLevel": 1,
+					"IsPassive": "false",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "false",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "true",
+					"ShowStatusEffects": "false",
+					"HideFromCombatLog": "true",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 0,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [],
+					"RandomizeStatusEffect": "false",
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "00000000-0000-0000-0000-000000000000",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"GrantedViaScript": "false"
+				},
+				{
+					"$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+				}
+			]
+		}
+	]
+}

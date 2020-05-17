@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StringTableFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>game\cyclopedia</Name>
+  <Entries>
+		<Entry>
+			<ID>8888</ID>
+			<DefaultText>The Eldritch Knight focuses on combining arcane and metal.  Blessed with arcane abilities the Eldritch Knight channels those abilities through their weapons.  The arcane magic within provides a steady health regeneration to help the wizard withstand the bloodiest battles.</DefaultText>
+			<FemaleText />
+		</Entry>
+  </Entries>
+</StringTableFile>

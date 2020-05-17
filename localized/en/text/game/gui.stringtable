@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StringTableFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>game\gui</Name>
+	<Entries>
+		<Entry>
+			<ID>8000</ID>
+			<DefaultText>Eldritch Knight</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>8001</ID>
+			<DefaultText>&lt;b&gt;Bonus&lt;/b&gt;
+Enhances melee attacks with elemental damage and bonus effects
+
+Regenerate health over time
+
+&lt;b&gt;Penalty&lt;/b&gt;
+
+Limited options for traditional Spell Casting
+
+Cannot empower abilities
+			</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>8989</ID>
+			<DefaultText>Attunement</DefaultText>
+			<FemaleText />
+		</Entry>
+	</Entries>
+</StringTableFile>

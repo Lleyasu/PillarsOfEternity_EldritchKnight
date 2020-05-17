@@ -1,0 +1,14 @@
+{
+	"Title": {
+		"en": "Eldritch Knight"
+	},
+	"Description": {
+		"en": "This mod adds a passive for wizard melee strikes",
+	},
+	"Author": "Kyllen",
+	"ModVersion": "1.0.1",
+	"SupportedGameVersion": {
+		"Min": "2.1.0",
+		"Max": "5.2.1"
+	}
+}

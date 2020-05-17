@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StringTableFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>game\abilities</Name>
+	<Entries>
+		<Entry>
+			<ID>9000</ID>
+			<DefaultText>Eldritch Knight</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9001</ID>
+			<DefaultText>The Eldritch Knight focused on combining arcane and metal and married the two.  Blessed with arcane abilities the spell dancer channels those abilities through their weapons.  The arcane magic within provides a steady health regeneration to help the wizard withstand the bloodiest battles.</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9002</ID>
+			<DefaultText>&lt;b&gt;Bonus&lt;/b&gt;
+Enhances melee attacks with elemental damage and bonus effects
+
+Regenerate health over time
+
+&lt;b&gt;Penalty&lt;/b&gt;
+
+Limited options for traditional Spell Casting
+
+Cannot empower abilities
+			</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9010</ID>
+			<DefaultText>Attunement</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9011</ID>
+			<DefaultText>The Eldritch Knight attunes their weapons to one of the elements enhancing their melee strikes</DefaultText>
+			<FemaleText />
+		</Entry>
+
+		<!-- Attunement Abilities -->
+		<!-- Lightning -->
+		<Entry>
+			<ID>10000</ID>
+			<DefaultText>Magus of Storms</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10001</ID>
+			<DefaultText>Magus of Storms Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10002</ID>
+			<DefaultText>Archmage of Storms</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10003</ID>
+			<DefaultText>Archmage of Storms Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10004</ID>
+			<DefaultText>God of Storms</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10005</ID>
+			<DefaultText>God of Storms Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+
+		<!-- Hexblade -->
+		<Entry>
+			<ID>10010</ID>
+			<DefaultText>Magus of Hexblade</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10011</ID>
+			<DefaultText>Magus of Hexblade Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10012</ID>
+			<DefaultText>Archmage of Hexblade</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10013</ID>
+			<DefaultText>Archmage of Hexblade Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10014</ID>
+			<DefaultText>God of Hexblade</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10015</ID>
+			<DefaultText>God of Hexblade Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+
+		<!-- Divine Fire -->
+		<Entry>
+			<ID>10020</ID>
+			<DefaultText>Magus of Divine</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10021</ID>
+			<DefaultText>Magus of Divine Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10022</ID>
+			<DefaultText>Archmage of Divine</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10023</ID>
+			<DefaultText>Archmage of Divine Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10024</ID>
+			<DefaultText>God of Divine</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10025</ID>
+			<DefaultText>God of Divine Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+
+		<!-- Winter -->
+		<Entry>
+			<ID>10040</ID>
+			<DefaultText>Magus of Winter</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10041</ID>
+			<DefaultText>Magus of Winter Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10042</ID>
+			<DefaultText>Archmage of Winter</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10043</ID>
+			<DefaultText>Archmage of Winter Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10044</ID>
+			<DefaultText>God of Winter</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>10045</ID>
+			<DefaultText>God of Winter Skill Text</DefaultText>
+			<FemaleText />
+		</Entry>
+
+	</Entries>
+</StringTableFile>
