@@ -565,7 +565,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 2
+									"MinimumPowerLevel": 1
 								},
 								"RequiresAbilityID": "723bbbf4-8452-4c0e-8880-222b3b395091",
 								"Conditional": {
@@ -652,7 +652,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 4
+									"MinimumPowerLevel": 2
 								},
 								"RequiresAbilityID": "0d9483a3-69e1-4d9e-9c40-333037db2d13",
 								"Conditional": {
@@ -724,7 +724,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 6
+									"MinimumPowerLevel": 3
 								},
 								"RequiresAbilityID": "1e2deba7-5151-46b4-b5aa-222a98598b0e",
 								"Conditional": {
@@ -781,7 +781,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 1
+									"MinimumPowerLevel": 2
 								},
 								"RequiresAbilityID": "723bbbf4-8452-4c0e-8880-222b3b395091",
 								"Conditional": {
@@ -868,7 +868,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 2
+									"MinimumPowerLevel": 4
 								},
 								"RequiresAbilityID": "71fa2878-56a1-4fd1-0001-e0d95b66d3eb",
 								"Conditional": {
@@ -940,7 +940,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 3
+									"MinimumPowerLevel": 6
 								},
 								"RequiresAbilityID": "183142fd-44d7-44c7-a1e7-4440abaab822",
 								"Conditional": {

@@ -1056,7 +1056,7 @@
 				}
 			]
 		},
-				{
+		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
 			"DebugName": "Magus_Of_Hexblade_Character_Aura_VFX",
 			"ID": "26c37c5e-97e9-11ea-bb37-0242ac130002",
@@ -1444,14 +1444,6 @@
 					"HideIfNoValue": "false",
 					"VisualEffects": [
 						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_pain_block_se.prefab",
-							"AttachPoint": "Root",
-							"AttachMode": "Attach",
-							"MeshType": "None",
-							"Loop": "true",
-							"Event": "OnApply"
-						},
-						{
 							"VisualEffect": "prefabs/effects/abilities/rogue/fx_shadowing_beyond_chest.prefab",
 							"AttachPoint": "Chest",
 							"AttachMode": "Attach",
@@ -1466,6 +1458,30 @@
 							"MeshType": "None",
 							"Loop": "true",
 							"Event": "OnApply"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/rogue/fx_shadowing_beyond_small.prefab",
+							"AttachPoint": "RightFoot",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnApply"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/rogue/fx_shadowing_beyond_small.prefab",
+							"AttachPoint": "LeftFoot",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnApply"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/paladin/fx_eternal_devotion_black_chest.prefab",
+							"AttachPoint": "Chest",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
 						},
 						{
 							"VisualEffect": "prefabs/effects/abilities/paladin/fx_eternal_devotion_black_se.prefab",
@@ -1484,20 +1500,28 @@
 							"Event": "OnStart"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/rogue/fx_shadowing_beyond_small.prefab",
+							"VisualEffect": "prefabs/effects/abilities/paladin/fx_eternal_devotion_black_se.prefab",
 							"AttachPoint": "RightFoot",
 							"AttachMode": "Attach",
 							"MeshType": "None",
 							"Loop": "true",
-							"Event": "OnApply"
+							"Event": "OnStart"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/rogue/fx_shadowing_beyond_small.prefab",
+							"VisualEffect": "prefabs/effects/abilities/paladin/fx_eternal_devotion_black_se.prefab",
 							"AttachPoint": "LeftFoot",
 							"AttachMode": "Attach",
 							"MeshType": "None",
 							"Loop": "true",
-							"Event": "OnApply"
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/paladin/fx_eternal_devotion_black_root.prefab",
+							"AttachPoint": "Root",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
 						}
 					],
 					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
