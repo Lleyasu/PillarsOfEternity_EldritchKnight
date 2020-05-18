@@ -37,6 +37,16 @@ Cannot empower abilities
 			<DefaultText>The Eldritch Knight attunes their weapons to one of the elements enhancing their melee strikes</DefaultText>
 			<FemaleText />
 		</Entry>
+		<Entry>
+			<ID>9012</ID>
+			<DefaultText>Mage Hunter</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9013</ID>
+			<DefaultText>The Eldritch Knight is better able to fight other mages</DefaultText>
+			<FemaleText />
+		</Entry>
 
 		<!-- Attunement Abilities -->
 		<!-- Lightning -->

@@ -987,6 +987,63 @@
 							}
 						},
 						{
+							"Note": "PL 7 Unlock - Mage Hunter",
+							"Category": "General",
+							"UnlockStyle": "Unlock",
+							"ActivationObject": "Self",
+							"AddAbilityID": "034b6fcb-4f8c-4680-b6b6-1de96395af1d",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+									"MinimumPowerLevel": 7
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"183142fd-44d7-44c7-a1e7-4440abaab822"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346556922
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
 							"Note": "PL 1 Unlock - Arms Bearer",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
@@ -2625,12 +2682,43 @@
 											},
 											"Not": true,
 											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": []
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -2824,43 +2912,12 @@
 											},
 											"Not": true,
 											"Operator": 0
-										},
-										{
-											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
-											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
-												"Flags": "",
-												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
-											},
-											"Not": true,
-											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": [
-										{
-											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
-											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
-												"Flags": "",
-												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
-											},
-											"Not": true,
-											"Operator": 0
-										}
-									]
+									"Components": []
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -2911,43 +2968,12 @@
 											},
 											"Not": true,
 											"Operator": 0
-										},
-										{
-											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
-											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
-												"Flags": "",
-												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
-											},
-											"Not": true,
-											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": [
-										{
-											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
-											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
-												"Flags": "",
-												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
-											},
-											"Not": true,
-											"Operator": 0
-										}
-									]
+									"Components": []
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -4269,14 +4295,12 @@
 										{
 											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
 											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
+												"FullName": "Boolean AlwaysFalse()",
+												"Parameters": [],
 												"Flags": "",
 												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
+												"FunctionHash": 334029817,
+												"ParameterHash": 334029817
 											},
 											"Not": false,
 											"Operator": 0
@@ -4705,12 +4729,43 @@
 											},
 											"Not": true,
 											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": []
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -4817,43 +4872,12 @@
 											},
 											"Not": true,
 											"Operator": 0
-										},
-										{
-											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
-											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
-												"Flags": "",
-												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
-											},
-											"Not": true,
-											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": [
-										{
-											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
-											"Data": {
-												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
-												"Parameters": [
-													"88fd4331-2d31-4af3-9481-9af56ef3332f"
-												],
-												"Flags": "",
-												"UnrealCall": "",
-												"FunctionHash": 1231916529,
-												"ParameterHash": -346019921
-											},
-											"Not": true,
-											"Operator": 0
-										}
-									]
+									"Components": []
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -5546,12 +5570,43 @@
 											},
 											"Not": true,
 											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": []
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -5745,12 +5800,43 @@
 											},
 											"Not": true,
 											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": []
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -6062,12 +6148,43 @@
 											},
 											"Not": true,
 											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": []
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
@@ -7774,12 +7891,43 @@
 											},
 											"Not": true,
 											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
 										}
 									]
 								},
 								"VisibilityConditional": {
 									"Operator": 0,
-									"Components": []
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"88fd4331-2d31-4af3-9481-9af56ef3332f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
 								},
 								"IsMutuallyExclusiveUpgrade": "true"
 							}
