@@ -739,11 +739,11 @@
 					"DoesNotApplyDamage": "false",
 					"TreatAsWeapon": "false",
 					"BounceData": {
-						"Bounces": 2,
+						"Bounces": 4,
 						"Multiplier": 0.5,
-						"Range": 3,
+						"Range": 5,
 						"InRangeOrder": "false",
-						"NoRepeatTargets": "false",
+						"NoRepeatTargets": "true",
 						"AlwaysBounceAtEnemies": "false",
 						"Delay": 0.1,
 						"NeverBounce": "false"
@@ -1458,6 +1458,22 @@
 						{
 							"VisualEffect": "prefabs/effects/abilities/druid/fx_avenging_storm_joint.prefab",
 							"AttachPoint": "ElbowLeft",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnApply"
+						},
+												{
+							"VisualEffect": "prefabs/effects/abilities/druid/fx_avenging_storm_joint.prefab",
+							"AttachPoint": "RightKnee",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnApply"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/druid/fx_avenging_storm_joint.prefab",
+							"AttachPoint": "LeftKnee",
 							"AttachMode": "Attach",
 							"MeshType": "None",
 							"Loop": "true",
