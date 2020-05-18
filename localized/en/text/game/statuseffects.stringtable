@@ -2,9 +2,19 @@
 <StringTableFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>game\statuseffects</Name>
   <Entries>
-      <Entry>
+    <Entry>
+      <ID>10100</ID>
+      <DefaultText>{0:value:percent} of Damage Dealt as stacking Corrosive Damage time </DefaultText>
+      <FemaleText />
+    </Entry>
+    <Entry>
       <ID>10101</ID>
-      <DefaultText>{0:value:percent} of Weapon Damage Dealt targets is returned as Healing over time</DefaultText>
+      <DefaultText>{0:value:percent} of Damage Dealt to targets is returned as Healing over time </DefaultText>
+      <FemaleText />
+    </Entry>
+	<Entry>
+      <ID>10102</ID>
+      <DefaultText>On hitting enemey with melee attack launches a streak of lightning that chains between enemies dealing damage &lt;link="gamedata://661addc1-3f15-8008-8693-d00d9264ca11"&gt;Lightning&lt;/link&gt;</DefaultText>
       <FemaleText />
     </Entry>
   </Entries>

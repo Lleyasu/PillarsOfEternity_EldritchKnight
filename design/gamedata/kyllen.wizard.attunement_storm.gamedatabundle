@@ -538,7 +538,7 @@
 				{
 					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
 					"StatusEffectType": "AttackEnemyOnEvent",
-					"OverrideDescriptionString": -1,
+					"OverrideDescriptionString": 10102,
 					"OverrideDescriptionStringTactical": -1,
 					"UseStatusEffectValueAs": "None",
 					"BaseValue": 0,
