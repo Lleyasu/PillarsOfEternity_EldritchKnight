@@ -47,6 +47,16 @@ Cannot empower abilities
 			<DefaultText>The Eldritch Knight is better able to fight other mages</DefaultText>
 			<FemaleText />
 		</Entry>
+		<Entry>
+			<ID>9014</ID>
+			<DefaultText>Dextrous Attacks</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9015</ID>
+			<DefaultText>The Eldritch Knight targets reflex when deflection is higher for melee attacks</DefaultText>
+			<FemaleText />
+		</Entry>
 
 		<!-- Attunement Abilities -->
 		<!-- Lightning -->
