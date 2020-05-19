@@ -1164,7 +1164,7 @@
 					"StatusEffectsValueIDs": [],
 					"AttackValueID": "042cbf80-4066-41ab-bcd5-128fcab3e4a6",
 					"AttackOverrideValue": "None",
-					"EventValue": "OnScoringGrazeHitOrCriticalHit",
+					"EventValue": "OnScoringHitOrCriticalHit",
 					"ClassValueID": "00000000-0000-0000-0000-000000000000",
 					"WeaponTypeValue": "None",
 					"AttackHitType": "None",
