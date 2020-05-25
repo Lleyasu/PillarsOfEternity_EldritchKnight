@@ -123,7 +123,7 @@
 							}
 						},
 						{
-							"Note": "PL 2 Unlock - Magus of Storms",
+							"Note": "PL 1 Unlock - Magus of Storms",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -133,9 +133,9 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 2
+									"MinimumPowerLevel": 1
 								},
-								"RequiresAbilityID": "723bbbf4-8452-4c0e-8880-222b3b395091",
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
 								"Conditional": {
 									"Operator": 0,
 									"Components": [
@@ -210,7 +210,7 @@
 							}
 						},
 						{
-							"Note": "PL 4 Unlock - Archmage of Storms",
+							"Note": "PL 3 Unlock - Archmage of Storms",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -220,7 +220,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 4
+									"MinimumPowerLevel": 3
 								},
 								"RequiresAbilityID": "0d7b3d08-439d-476a-aa15-222000059632",
 								"Conditional": {
@@ -282,7 +282,7 @@
 							}
 						},
 						{
-							"Note": "PL 6 Unlock - God of Storms",
+							"Note": "PL 5 Unlock - God of Storms",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -292,7 +292,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 6
+									"MinimumPowerLevel": 5
 								},
 								"RequiresAbilityID": "a338a65d-edd9-406e-0000-425cfe0a2abb",
 								"Conditional": {
@@ -339,7 +339,7 @@
 							}
 						},
 						{
-							"Note": "PL 2 Unlock - Magus of Hexblade",
+							"Note": "PL 1 Unlock - Magus of Hexblade",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -349,9 +349,9 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 2
+									"MinimumPowerLevel": 1
 								},
-								"RequiresAbilityID": "723bbbf4-8452-4c0e-8880-222b3b395091",
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
 								"Conditional": {
 									"Operator": 0,
 									"Components": [
@@ -426,7 +426,7 @@
 							}
 						},
 						{
-							"Note": "PL 4 Unlock - Archmage of Hexblade",
+							"Note": "PL 3 Unlock - Archmage of Hexblade",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -436,7 +436,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 4
+									"MinimumPowerLevel": 3
 								},
 								"RequiresAbilityID": "1d9a83c3-69c1-419e-9c40-313c3fdbed13",
 								"Conditional": {
@@ -498,7 +498,7 @@
 							}
 						},
 						{
-							"Note": "PL 6 Unlock - God of Hexblade",
+							"Note": "PL 5 Unlock - God of Hexblade",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -508,7 +508,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 6
+									"MinimumPowerLevel": 5
 								},
 								"RequiresAbilityID": "1c468188-98a6-8cb8-82db-2226e28a87d8",
 								"Conditional": {
@@ -555,7 +555,7 @@
 							}
 						},
 						{
-							"Note": "PL 2 Unlock - Magus of Divine Fire",
+							"Note": "PL 1 Unlock - Magus of Divine Fire",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -565,9 +565,9 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 2
+									"MinimumPowerLevel": 1
 								},
-								"RequiresAbilityID": "723bbbf4-8452-4c0e-8880-222b3b395091",
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
 								"Conditional": {
 									"Operator": 0,
 									"Components": [
@@ -642,7 +642,7 @@
 							}
 						},
 						{
-							"Note": "PL 4 Unlock - Archmage of the Divine",
+							"Note": "PL 3 Unlock - Archmage of the Divine",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -652,7 +652,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 4
+									"MinimumPowerLevel": 3
 								},
 								"RequiresAbilityID": "0d9483a3-69e1-4d9e-9c40-333037db2d13",
 								"Conditional": {
@@ -714,7 +714,7 @@
 							}
 						},
 						{
-							"Note": "PL 6 Unlock - God of the Divine",
+							"Note": "PL 5 Unlock - God of the Divine",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -724,7 +724,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 6
+									"MinimumPowerLevel": 5
 								},
 								"RequiresAbilityID": "1e2deba7-5151-46b4-b5aa-222a98598b0e",
 								"Conditional": {
@@ -771,7 +771,7 @@
 							}
 						},
 						{
-							"Note": "PL 2 Unlock - Magus of Winter",
+							"Note": "PL 1 Unlock - Magus of Winter",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -781,9 +781,9 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 2
+									"MinimumPowerLevel": 1
 								},
-								"RequiresAbilityID": "723bbbf4-8452-4c0e-8880-222b3b395091",
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
 								"Conditional": {
 									"Operator": 0,
 									"Components": [
@@ -858,7 +858,7 @@
 							}
 						},
 						{
-							"Note": "PL 4 Unlock - Archmage of Winter",
+							"Note": "PL 3 Unlock - Archmage of Winter",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -868,7 +868,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 4
+									"MinimumPowerLevel": 3
 								},
 								"RequiresAbilityID": "71fa2878-56a1-4fd1-0001-e0d95b66d3eb",
 								"Conditional": {
@@ -930,7 +930,7 @@
 							}
 						},
 						{
-							"Note": "PL 6 Unlock - God of Winter",
+							"Note": "PL 5 Unlock - God of Winter",
 							"Category": "General",
 							"UnlockStyle": "Unlock",
 							"ActivationObject": "Self",
@@ -940,7 +940,7 @@
 								"MinimumCharacterLevel": 1,
 								"PowerLevelRequirement": {
 									"ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-									"MinimumPowerLevel": 6
+									"MinimumPowerLevel": 5
 								},
 								"RequiresAbilityID": "183142fd-44d7-44c7-a1e7-4440abaab822",
 								"Conditional": {

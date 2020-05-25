@@ -761,7 +761,7 @@
 					"ProjectileCount": 1,
 					"IgnoreMagicDefense": "false",
 					"ProjectileConeAngle": 145,
-					"ProjectilePrefab": "prefabs/projectiles/wizard/fx_chain_lightning_projectile.prefab",
+					"ProjectilePrefab": "prefabs/projectiles/invisible_projectile.prefab",
 					"IsMultiHit": "false",
 					"MultiHitTravelDist": 10,
 					"MultiHitMaxHits": 0,
