@@ -1122,7 +1122,7 @@
 					"HideIfNoValue": "false",
 					"VisualEffects": [
 						{
-							"VisualEffect": "prefabs/effects/abilities/monk/fx_lightning_strikes_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/druid/fx_avenging_storm_joint.prefab",
 							"AttachPoint": "RightWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",
@@ -1130,7 +1130,7 @@
 							"Event": "OnApply"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/monk/fx_lightning_strikes_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/druid/fx_avenging_storm_joint.prefab",
 							"AttachPoint": "LeftWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",

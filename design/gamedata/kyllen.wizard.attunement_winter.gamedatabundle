@@ -161,9 +161,7 @@
 					"StatusEffectsIDs": [
 						"f4fbe2e4-a112-4b63-8b6d-56b44a3a52c0",
 						"89103953-f1d3-48a6-9f68-036c0dcd02b6",
-						"b1dec223-62e0-41e1-9e13-b54d406e8396",
-						"927cd701-68fd-4e88-8519-48f45106b3f8",
-						"45be1490-0b19-4cc3-927c-2d59ac9ae081",
+						"0ff78e18-e3cc-4495-8a6f-d031f28843f3",
 						"1770245e-d201-4cf3-b34c-c5d6124df0a6"
 					],
 					"RandomizeStatusEffect": "false",
@@ -255,9 +253,7 @@
 					"StatusEffectsIDs": [
 						"f4fbe2e4-a112-4b63-8b6d-56b44a3a52c0",
 						"89103953-f1d3-48a6-9f68-036c0dcd02b6",
-						"b1dec223-62e0-41e1-9e13-b54d406e8396",
-						"927cd701-68fd-4e88-8519-48f45106b3f8",
-						"45be1490-0b19-4cc3-927c-2d59ac9ae081",
+						"0ff78e18-e3cc-4495-8a6f-d031f28843f3",
 						"6d101633-fb59-4f63-9444-c141b72fc47e",
 						"f609acf7-c788-4ce1-852d-550d2dd26ddc"
 					],
@@ -671,16 +667,16 @@
 		},
 		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-			"DebugName": "Archmage_of_Winter_SE_Deflection",
-			"ID": "b1dec223-62e0-41e1-9e13-b54d406e8396",
+			"DebugName": "Archmage_Of_Winter_Heal_OnHit",
+			"ID": "0ff78e18-e3cc-4495-8a6f-d031f28843f3",
 			"Components": [
 				{
 					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
-					"StatusEffectType": "Deflection",
+					"StatusEffectType": "AttackTargetOnEvent",
 					"OverrideDescriptionString": -1,
 					"OverrideDescriptionStringTactical": -1,
 					"UseStatusEffectValueAs": "None",
-					"BaseValue": 10,
+					"BaseValue": 0,
 					"DynamicValue": {
 						"Stat": "None",
 						"SkillDataID": "00000000-0000-0000-0000-000000000000",
@@ -746,9 +742,9 @@
 						"IsKith": "false",
 						"HealthPercentage": 0,
 						"HealthOperator": "EqualTo",
-						"Range": "None",
+						"Range": "Melee",
 						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
-						"Source": "None",
+						"Source": "Weapon",
 						"DefendedBy": "None",
 						"Empowered": "false",
 						"Disengagement": "false",
@@ -782,9 +778,9 @@
 					"ItemValueID": "00000000-0000-0000-0000-000000000000",
 					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
 					"StatusEffectsValueIDs": [],
-					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackValueID": "2b039c74-14e3-4ca0-ba8f-0d9fbfe94308",
 					"AttackOverrideValue": "None",
-					"EventValue": "OnApply",
+					"EventValue": "OnScoringHitOrCriticalHit",
 					"ClassValueID": "00000000-0000-0000-0000-000000000000",
 					"WeaponTypeValue": "None",
 					"AttackHitType": "None",
@@ -796,143 +792,127 @@
 			]
 		},
 		{
-			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-			"DebugName": "Archmage_of_Winter_SE_HitToGraze",
-			"ID": "927cd701-68fd-4e88-8519-48f45106b3f8",
+			"$type": "Game.GameData.AttackRangedGameData, Assembly-CSharp",
+			"DebugName": "Archmage_of_Winter_Heal_Chain",
+			"ID": "2b039c74-14e3-4ca0-ba8f-0d9fbfe94308",
 			"Components": [
 				{
-					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
-					"StatusEffectType": "EnemyDeflectReflexHitToGrazeChance",
-					"OverrideDescriptionString": -1,
-					"OverrideDescriptionStringTactical": -1,
-					"UseStatusEffectValueAs": "None",
-					"BaseValue": 0.3,
-					"DynamicValue": {
-						"Stat": "None",
-						"SkillDataID": "00000000-0000-0000-0000-000000000000",
-						"ClassID": "00000000-0000-0000-0000-000000000000",
-						"MultiplyBy": 1,
-						"Operator": "Add"
-					},
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
 					"KeywordsIDs": [],
-					"DurationType": "Infinite",
-					"Duration": 0,
-					"MaxStackQuantity": 0,
-					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
-					"ApplicationType": "ApplyOnStart",
-					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
-					"StackedChildrenApplyEffects": "false",
-					"InclusionConditions": {
-						"Operator": 0,
-						"Components": []
-					},
-					"ApplicationPrerequisites": {
+					"AttackDistance": 5,
+					"MinAttackDistance": 0,
+					"AttackVariationID": "146c1a57-5c71-4eba-91cd-2717ccd8b06b",
+					"UseParentEquippableHand": "false",
+					"CastSpeedID": "e4c738a7-4d3f-407f-b035-cc76191fe26b",
+					"RecoveryTimeID": "2065a64b-0d53-48b8-9cfd-600992c389fd",
+					"OverrideTacticalActionType": "None",
+					"ImpactDelay": 0,
+					"ForcedTarget": "None",
+					"AffectedTargetType": "Friendly",
+					"AffectedTargetConditional": {
 						"Conditional": {
 							"Operator": 0,
 							"Components": []
 						}
 					},
-					"TriggerAdjustment": {
-						"TriggerOnEvent": "None",
-						"TriggerOffEvent": "None",
-						"ValidateWithAttackFilter": "false",
-						"ParamValue": 0,
-						"ValueAdjustment": 0,
-						"DurationAdjustment": 0,
-						"ResetTriggerOnEffectTimeout": "false",
-						"MaxTriggerCount": 0,
-						"IgnoreMaxTriggerCount": "false",
-						"RemoveEffectAtMax": "false",
-						"ChanceToTrigger": 1
+					"AffectedTargetDeathState": "Alive",
+					"HostilityOverride": "Default",
+					"PushDistance": 0,
+					"FaceTarget": "true",
+					"AccuracyBonus": 0,
+					"PenetrationRating": 0,
+					"DamageData": {
+						"DamageType": "None",
+						"AlternateDamageType": "None",
+						"Minimum": 0,
+						"Maximum": 0,
+						"TacticalMinimumOverride": 0,
+						"TacticalMaximumOverride": 0,
+						"DamageProcs": []
 					},
-					"PowerLevelScaling": {
-						"UseCharacterLevel": "false",
-						"BaseLevel": 0,
-						"LevelIncrement": 1,
-						"MaxLevel": 0,
-						"ValueAdjustment": 0,
-						"DurationAdjustment": 0
-					},
-					"IsHostile": "false",
-					"ClearOnCombatEnd": "false",
-					"ClearOnRest": "false",
-					"ClearOnFoodRest": "false",
-					"ClearWhenAttacks": "false",
-					"ClearOnDeath": "false",
-					"HideFromCombatTooltip": "false",
-					"HideFromCombatLog": "false",
-					"HideFromUI": "false",
-					"HideIfNoValue": "false",
+					"RequiresHitObject": "true",
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"621e88d1-e014-4f88-991d-5f117eec95b7"
+					],
+					"RandomizeStatusEffect": "false",
+					"CanGraze": "false",
+					"CanCrit": "true",
+					"DefendedBy": "None",
+					"AfflictionsDefendedBy": "None",
+					"AfflictionApplicationModifier": "None",
+					"SubstituteHitVisualEffect": "",
 					"VisualEffects": [],
-					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
-					"AttackFilter": {
-						"KeywordsIDs": [],
-						"KeywordLogic": "Or",
-						"Race": "None",
-						"IsKith": "false",
-						"HealthPercentage": 0,
-						"HealthOperator": "EqualTo",
-						"Range": "None",
-						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
-						"Source": "None",
-						"DefendedBy": "None",
-						"Empowered": "false",
-						"Disengagement": "false",
-						"Stealthed": "false",
-						"UseStealthLinger": "false",
-						"PowerLevel": 0,
-						"PowerLevelOperator": "EqualTo",
-						"ChanceToApply": 1,
-						"AttackHostility": "Default",
-						"TargetType": "None"
+					"AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+					"ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+					"LaunchBone": "LeftWeapon",
+					"HitBone": "Chest",
+					"OnHitShakeDuration": "None",
+					"OnHitShakeStrength": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"AllReactNoise": "false",
+					"InterruptsOn": "None",
+					"InterruptType": "Normal",
+					"TargetAngle": 0,
+					"ApplyOnceOnly": "false",
+					"PathsToTarget": "true",
+					"HideFromCombatLog": "false",
+					"AdditionalAttackOnTooltip": "false",
+					"DoesNotApplyDamage": "false",
+					"TreatAsWeapon": "false",
+					"BounceData": {
+						"Bounces": 3,
+						"Multiplier": 0.75,
+						"Range": 10,
+						"InRangeOrder": "false",
+						"NoRepeatTargets": "true",
+						"AlwaysBounceAtEnemies": "false",
+						"Delay": 0.2,
+						"NeverBounce": "false"
 					},
-					"AttackTargetFilter": {
-						"KeywordsIDs": [],
-						"KeywordLogic": "Or",
-						"Race": "None",
-						"IsKith": "false",
-						"HealthPercentage": 0,
-						"HealthOperator": "EqualTo",
-						"Distance": 0,
-						"DistanceOperator": "EqualTo",
-						"HasDOT": "false",
-						"IsMarked": "false",
-						"TargetHostility": "Default"
+					"AttackValidityConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					}
+				},
+				{
+					"$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+					"LaunchAttackOnCollision": "false",
+					"ProjectileCount": 1,
+					"IgnoreMagicDefense": "false",
+					"ProjectileConeAngle": 145,
+					"ProjectilePrefab": "prefabs/projectiles/paladin/fx_healing_chain_projectile.prefab",
+					"IsMultiHit": "false",
+					"MultiHitTravelDist": 10,
+					"MultiHitMaxHits": 0,
+					"LaunchSource": "Caster",
+					"LaunchOffset": {
+						"x": 0,
+						"y": 0,
+						"z": 0
 					},
-					"ExtraValue": 0,
-					"OverridePenetration": 0,
-					"DamageTypeValue": "All",
-					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
-					"RaceValue": "None",
-					"StatusEffectTypeValue": "None",
-					"ItemValueID": "00000000-0000-0000-0000-000000000000",
-					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
-					"StatusEffectsValueIDs": [],
-					"AttackValueID": "00000000-0000-0000-0000-000000000000",
-					"AttackOverrideValue": "None",
-					"EventValue": "OnApply",
-					"ClassValueID": "00000000-0000-0000-0000-000000000000",
-					"WeaponTypeValue": "None",
-					"AttackHitType": "None",
-					"SkillValueID": "00000000-0000-0000-0000-000000000000",
-					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
-					"BedRestDaysMinimum": 0,
-					"BedRestDaysMaximum": 0
+					"LaunchOffsetRandom": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
 				}
 			]
 		},
 		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-			"DebugName": "Archmage_of_Winter_SE_Reflex",
-			"ID": "45be1490-0b19-4cc3-927c-2d59ac9ae081",
+			"DebugName": "Healing_SE_Heal",
+			"ID": "621e88d1-e014-4f88-991d-5f117eec95b7",
 			"Components": [
 				{
 					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
-					"StatusEffectType": "Reflex",
+					"StatusEffectType": "Health",
 					"OverrideDescriptionString": -1,
 					"OverrideDescriptionStringTactical": -1,
 					"UseStatusEffectValueAs": "None",
-					"BaseValue": 20,
+					"BaseValue": 5,
 					"DynamicValue": {
 						"Stat": "None",
 						"SkillDataID": "00000000-0000-0000-0000-000000000000",
@@ -941,7 +921,7 @@
 						"Operator": "Add"
 					},
 					"KeywordsIDs": [],
-					"DurationType": "Infinite",
+					"DurationType": "Instant",
 					"Duration": 0,
 					"MaxStackQuantity": 0,
 					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
@@ -1388,7 +1368,7 @@
 					"HideIfNoValue": "false",
 					"VisualEffects": [
 						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_time_parasite_se_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
 							"AttachPoint": "RightWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",
@@ -1396,7 +1376,7 @@
 							"Event": "OnStart"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_time_parasite_se_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
 							"AttachPoint": "LeftWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",
@@ -1531,7 +1511,7 @@
 					"HideIfNoValue": "false",
 					"VisualEffects": [
 						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_time_parasite_se_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
 							"AttachPoint": "RightWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",
@@ -1539,7 +1519,7 @@
 							"Event": "OnStart"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_time_parasite_se_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
 							"AttachPoint": "LeftWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",
@@ -1547,8 +1527,32 @@
 							"Event": "OnStart"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/wizzard/fx_llengraths_displaced_image_se.prefab",
-							"AttachPoint": "Chest",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "RightHand",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "LeftHand",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "ElbowRight",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "ElbowLeft",
 							"AttachMode": "Attach",
 							"MeshType": "None",
 							"Loop": "true",
@@ -1682,15 +1686,7 @@
 					"HideIfNoValue": "false",
 					"VisualEffects": [
 						{
-							"VisualEffect": "prefabs/effects/abilities/wizzard/fx_llengraths_displaced_image_se.prefab",
-							"AttachPoint": "Chest",
-							"AttachMode": "Attach",
-							"MeshType": "None",
-							"Loop": "true",
-							"Event": "OnStart"
-						},
-						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_time_parasite_se_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
 							"AttachPoint": "RightWeapon",
 							"AttachMode": "Attach",
 							"MeshType": "None",
@@ -1698,8 +1694,64 @@
 							"Event": "OnStart"
 						},
 						{
-							"VisualEffect": "prefabs/effects/abilities/cipher/fx_time_parasite_se_hand.prefab",
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
 							"AttachPoint": "LeftWeapon",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_med.prefab",
+							"AttachPoint": "Chest",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "RightHand",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "LeftHand",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "RightFoot",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "LeftFoot",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "ElbowRight",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/priest/fx_minor_avatar_sm.prefab",
+							"AttachPoint": "ElbowLeft",
 							"AttachMode": "Attach",
 							"MeshType": "None",
 							"Loop": "true",

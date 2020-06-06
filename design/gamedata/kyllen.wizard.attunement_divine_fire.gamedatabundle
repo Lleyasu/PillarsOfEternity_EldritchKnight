@@ -530,7 +530,7 @@
 				}
 			]
 		},
-				{
+		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
 			"DebugName": "Divine_Flame_OnHit_SE_VFX",
 			"ID": "c837547a-eef9-46e0-bca8-661991d15279",
@@ -777,8 +777,7 @@
 					"StatusEffectTypeValue": "None",
 					"ItemValueID": "00000000-0000-0000-0000-000000000000",
 					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
-					"StatusEffectsValueIDs": [
-					],
+					"StatusEffectsValueIDs": [],
 					"AttackValueID": "575fd1f6-dae8-4180-a1a5-89c23cb26754",
 					"AttackOverrideValue": "None",
 					"EventValue": "OnHitOrCriticallyHit",
@@ -799,8 +798,7 @@
 			"Components": [
 				{
 					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
-					"KeywordsIDs": [
-					],
+					"KeywordsIDs": [],
 					"AttackDistance": 5,
 					"MinAttackDistance": 0,
 					"AttackVariationID": "35abdf41-fc3f-4310-8d5d-5d7da644affc",
@@ -1049,7 +1047,7 @@
 				}
 			]
 		},
-				{
+		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
 			"DebugName": "God_Of_Divine_Attack_On_Event",
 			"ID": "0894ce43-8b9c-428f-80a5-a45d83132748",
@@ -1175,7 +1173,7 @@
 				}
 			]
 		},
-				{
+		{
 			"$type": "Game.GameData.AttackRangedGameData, Assembly-CSharp",
 			"DebugName": "God_Of_Divine_Cleansing_Flame",
 			"ID": "042cbf80-4066-41ab-bcd5-128fcab3e4a6",
@@ -1294,7 +1292,7 @@
 				}
 			]
 		},
-				{
+		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
 			"DebugName": "God_Of_Divine_Cleansing_Flame_SE_AdjustBeneficialDurations",
 			"ID": "30155fd5-8b45-484b-b0ef-0e080b240f2b",

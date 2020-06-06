@@ -64,7 +64,7 @@
 					"ClearOnFoodRest": "false",
 					"ClearWhenAttacks": "false",
 					"ClearOnDeath": "false",
-					"HideFromCombatTooltip": "true",
+					"HideFromCombatTooltip": "false",
 					"HideFromCombatLog": "false",
 					"HideFromUI": "false",
 					"HideIfNoValue": "false",
