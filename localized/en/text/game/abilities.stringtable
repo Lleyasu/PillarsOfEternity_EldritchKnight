@@ -39,12 +39,12 @@ Cannot empower abilities
 		</Entry>
 		<Entry>
 			<ID>9012</ID>
-			<DefaultText>Mage Hunter</DefaultText>
+			<DefaultText>Blade Dancing</DefaultText>
 			<FemaleText />
 		</Entry>
 		<Entry>
 			<ID>9013</ID>
-			<DefaultText>The Eldritch Knight is better able to fight other mages</DefaultText>
+			<DefaultText>The Eldritch Knight is better able to fight with two weapons</DefaultText>
 			<FemaleText />
 		</Entry>
 		<Entry>
@@ -55,6 +55,26 @@ Cannot empower abilities
 		<Entry>
 			<ID>9015</ID>
 			<DefaultText>The Eldritch Knight targets reflex when deflection is higher for melee attacks</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9016</ID>
+			<DefaultText>Arcane Shield</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9017</ID>
+			<DefaultText>The Eldritch Knight's training with shields allows them to occasionally reflect spells</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9018</ID>
+			<DefaultText>Arcane Blows</DefaultText>
+			<FemaleText />
+		</Entry>
+		<Entry>
+			<ID>9019</ID>
+			<DefaultText>The Eldritch Knight's training with shields allows them to occasionally reflect spells</DefaultText>
 			<FemaleText />
 		</Entry>
 

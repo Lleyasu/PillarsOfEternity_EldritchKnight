@@ -283,133 +283,7 @@
 				}
 			]
 		},
-				{
-			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-			"DebugName": "Mage_Hunter_Resistance",
-			"ID": "42ab2db8-e380-44ca-9e23-c836f9b035bd",
-			"Components": [
-				{
-					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
-					"StatusEffectType": "AttackResistance",
-					"OverrideDescriptionString": -1,
-					"OverrideDescriptionStringTactical": -1,
-					"UseStatusEffectValueAs": "None",
-					"BaseValue": 0.2,
-					"DynamicValue": {
-						"Stat": "None",
-						"SkillDataID": "00000000-0000-0000-0000-000000000000",
-						"ClassID": "00000000-0000-0000-0000-000000000000",
-						"MultiplyBy": 1,
-						"Operator": "Add"
-					},
-					"KeywordsIDs": [],
-					"DurationType": "Infinite",
-					"Duration": 0,
-					"MaxStackQuantity": 0,
-					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
-					"ApplicationType": "ApplyOnStart",
-					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
-					"StackedChildrenApplyEffects": "false",
-					"InclusionConditions": {
-						"Operator": 0,
-						"Components": []
-					},
-					"ApplicationPrerequisites": {
-						"Conditional": {
-							"Operator": 0,
-							"Components": []
-						}
-					},
-					"TriggerAdjustment": {
-						"TriggerOnEvent": "None",
-						"TriggerOffEvent": "None",
-						"ValidateWithAttackFilter": "false",
-						"ParamValue": 0,
-						"ValueAdjustment": 0,
-						"DurationAdjustment": 0,
-						"ResetTriggerOnEffectTimeout": "false",
-						"MaxTriggerCount": 0,
-						"IgnoreMaxTriggerCount": "false",
-						"RemoveEffectAtMax": "false",
-						"ChanceToTrigger": 1
-					},
-					"PowerLevelScaling": {
-						"UseCharacterLevel": "false",
-						"BaseLevel": 0,
-						"LevelIncrement": 1,
-						"MaxLevel": 0,
-						"ValueAdjustment": 0,
-						"DurationAdjustment": 0
-					},
-					"IsHostile": "false",
-					"ClearOnCombatEnd": "false",
-					"ClearOnRest": "false",
-					"ClearOnFoodRest": "false",
-					"ClearWhenAttacks": "false",
-					"ClearOnDeath": "false",
-					"HideFromCombatTooltip": "true",
-					"HideFromCombatLog": "false",
-					"HideFromUI": "false",
-					"HideIfNoValue": "false",
-					"VisualEffects": [],
-					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
-					"AttackFilter": {
-						"KeywordsIDs": [],
-						"KeywordLogic": "Or",
-						"Race": "None",
-						"IsKith": "false",
-						"HealthPercentage": 0,
-						"HealthOperator": "EqualTo",
-						"Range": "None",
-						"ClassTypeID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
-						"Source": "None",
-						"DefendedBy": "None",
-						"Empowered": "false",
-						"Disengagement": "false",
-						"Stealthed": "false",
-						"UseStealthLinger": "false",
-						"PowerLevel": 0,
-						"PowerLevelOperator": "EqualTo",
-						"ChanceToApply": 1,
-						"AttackHostility": "Default",
-						"TargetType": "None"
-					},
-					"AttackTargetFilter": {
-						"KeywordsIDs": [],
-						"KeywordLogic": "Or",
-						"Race": "None",
-						"IsKith": "false",
-						"HealthPercentage": 0,
-						"HealthOperator": "EqualTo",
-						"Distance": 0,
-						"DistanceOperator": "EqualTo",
-						"HasDOT": "false",
-						"IsMarked": "false",
-						"TargetHostility": "Default"
-					},
-					"ExtraValue": 0,
-					"OverridePenetration": 0,
-					"DamageTypeValue": "All",
-					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
-					"RaceValue": "Wilder",
-					"StatusEffectTypeValue": "None",
-					"ItemValueID": "00000000-0000-0000-0000-000000000000",
-					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
-					"StatusEffectsValueIDs": [],
-					"AttackValueID": "00000000-0000-0000-0000-000000000000",
-					"AttackOverrideValue": "None",
-					"EventValue": "OnApply",
-					"ClassValueID": "00000000-0000-0000-0000-000000000000",
-					"WeaponTypeValue": "None",
-					"AttackHitType": "None",
-					"SkillValueID": "00000000-0000-0000-0000-000000000000",
-					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
-					"BedRestDaysMinimum": 0,
-					"BedRestDaysMaximum": 0
-				}
-			]
-		},
-				{
+		{
 			"$type": "Game.GameData.AttackLowestDefenseAbilityGameData, Assembly-CSharp",
 			"DebugName": "Dextrous_Attacks",
 			"ID": "2b922a98-e5a6-4d8d-b063-1a040a73e8ba",
@@ -498,6 +372,373 @@
 					"$type": "Game.GameData.AttackLowestDefenseAbilityComponent, Assembly-CSharp",
 					"OriginalDefenseType": "Deflect",
 					"ChangeToDefenseType": "Reflex"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Arcane_Shield",
+			"ID": "7e7d7bca-ae2e-44f4-988d-ef66d10abb0b",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"DisplayName": 9016,
+					"Description": 9017,
+					"DescriptionTactical": -1,
+					"UpgradeDescriptions": [],
+					"UpgradedFromID": "2d34af0a-b2e1-49f3-821b-a1f8c36c7af5",
+					"Vocalization": "NoVocalization",
+					"Icon": "gui/icons/abilities/talents/ability_passive_defense.png",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "00000000-0000-0000-0000-000000000000",
+					"AbilityLevel": 1,
+					"IsPassive": "true",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "false",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "false",
+					"ShowStatusEffects": "false",
+					"HideFromCombatLog": "true",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 0,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsShieldEquipped(Guid)",
+										"Parameters": [
+											"7d150000-0000-0000-0000-000000000000"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": -570915226,
+										"ParameterHash": -1456173095
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsShieldEquipped(Guid)",
+										"Parameters": [
+											"7d150000-0000-0000-0000-000000000000"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": -570916226,
+										"ParameterHash": -1456173095
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"b75431c5-8983-4ec8-8127-79d3098ded10",
+						"49b723f4-477d-42eb-833b-b279a21fb85e",
+						"3841b873-45be-4591-8c07-5277f7013c12"
+					],
+					"RandomizeStatusEffect": "false",
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "00000000-0000-0000-0000-000000000000",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"GrantedViaScript": "false"
+				},
+				{
+					"$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Blade_Dancing",
+			"ID": "94027c79-352f-4797-adfe-5543257bd481",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"DisplayName": 9012,
+					"Description": 9013,
+					"DescriptionTactical": -1,
+					"UpgradeDescriptions": [],
+					"UpgradedFromID": "754ee237-a385-4807-b404-07841e1e0ded",
+					"Vocalization": "NoVocalization",
+					"Icon": "gui/icons/abilities/talents/ability_passive_attack_speed.png",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "00000000-0000-0000-0000-000000000000",
+					"AbilityLevel": 1,
+					"IsPassive": "true",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "false",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "false",
+					"ShowStatusEffects": "false",
+					"HideFromCombatLog": "true",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 0,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsMeleeWeaponEquippedInSecondarySlot(Guid)",
+										"Parameters": [
+											"7d150000-0000-0000-0000-000000000000"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": -573915226,
+										"ParameterHash": -1456173095
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsMeleeWeaponEquippedInSecondarySlot(Guid)",
+										"Parameters": [
+											"7d150000-0000-0000-0000-000000000000"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": -573916226,
+										"ParameterHash": -1456173095
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"597b4470-0809-404d-ba71-b196b3e2d808",
+						"8d2ef1d7-baf8-4e85-912c-178f7e6be36d"
+					],
+					"RandomizeStatusEffect": "false",
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "00000000-0000-0000-0000-000000000000",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"GrantedViaScript": "false"
+				},
+				{
+					"$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Arcane_Blows",
+			"ID": "f42caf69-7946-4961-a839-a035a4d77390",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"DisplayName": 9018,
+					"Description": 9019,
+					"DescriptionTactical": -1,
+					"UpgradeDescriptions": [],
+					"UpgradedFromID": "7b2a32f4-9af4-4bb1-afad-71788afc746f",
+					"Vocalization": "NoVocalization",
+					"Icon": "gui/icons/abilities/talents/ability_passive_attack.png",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "00000000-0000-0000-0000-000000000000",
+					"AbilityLevel": 1,
+					"IsPassive": "true",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "false",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "false",
+					"ShowStatusEffects": "false",
+					"HideFromCombatLog": "true",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 0,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsTwoHandWeaponEquipped(Guid)",
+										"Parameters": [
+											"7d150000-0000-0000-0000-000000000000"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": -593915226,
+										"ParameterHash": -1456173095
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsTwoHandWeaponEquipped(Guid)",
+										"Parameters": [
+											"7d150000-0000-0000-0000-000000000000"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": -593916226,
+										"ParameterHash": -1456173095
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"36a35b18-4ea6-43d4-97f9-5914ae016ebb",
+						"89c86fed-1df9-44f2-88ea-8e5383226c32"
+					],
+					"RandomizeStatusEffect": "false",
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "00000000-0000-0000-0000-000000000000",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"GrantedViaScript": "false"
+				},
+				{
+					"$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
 				}
 			]
 		}
