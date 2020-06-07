@@ -740,7 +740,7 @@
 					"TreatAsWeapon": "false",
 					"BounceData": {
 						"Bounces": 4,
-						"Multiplier": 0.5,
+						"Multiplier": 1.0,
 						"Range": 5,
 						"InRangeOrder": "false",
 						"NoRepeatTargets": "true",

@@ -606,7 +606,7 @@
 							"MeshType": "None",
 							"Loop": "false",
 							"Event": "OnStart"
-						}
+						}						
 					],
 					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
 					"AttackFilter": {
@@ -667,12 +667,12 @@
 		},
 		{
 			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-			"DebugName": "Archmage_Of_Divine_Fire_Apply_Knockdown",
+			"DebugName": "Archmage_Of_Divine_Fire_Apply_Blind",
 			"ID": "eb1b1b23-cb9d-4864-a5f5-3d8901bec347",
 			"Components": [
 				{
 					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
-					"StatusEffectType": "AttackEnemyOnEvent",
+					"StatusEffectType": "ApplyStatusEffectToEnemyOnEvent",
 					"OverrideDescriptionString": -1,
 					"OverrideDescriptionStringTactical": -1,
 					"UseStatusEffectValueAs": "None",
@@ -687,262 +687,6 @@
 					"KeywordsIDs": [],
 					"DurationType": "Infinite",
 					"Duration": 0,
-					"MaxStackQuantity": 0,
-					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
-					"ApplicationType": "ApplyOnStart",
-					"IntervalRateID": "cf4a693e-5ec4-437c-b9e0-9133d416d023",
-					"StackedChildrenApplyEffects": "false",
-					"InclusionConditions": {
-						"Operator": 0,
-						"Components": []
-					},
-					"ApplicationPrerequisites": {
-						"Conditional": {
-							"Operator": 0,
-							"Components": []
-						}
-					},
-					"TriggerAdjustment": {
-						"TriggerOnEvent": "None",
-						"TriggerOffEvent": "None",
-						"ValidateWithAttackFilter": "false",
-						"ParamValue": 0,
-						"ValueAdjustment": 0,
-						"DurationAdjustment": 0,
-						"ResetTriggerOnEffectTimeout": "false",
-						"MaxTriggerCount": 0,
-						"IgnoreMaxTriggerCount": "false",
-						"RemoveEffectAtMax": "false",
-						"ChanceToTrigger": 1
-					},
-					"PowerLevelScaling": {
-						"UseCharacterLevel": "false",
-						"BaseLevel": 0,
-						"LevelIncrement": 1,
-						"MaxLevel": 0,
-						"ValueAdjustment": 0,
-						"DurationAdjustment": 0
-					},
-					"IsHostile": "false",
-					"ClearOnCombatEnd": "false",
-					"ClearOnRest": "false",
-					"ClearOnFoodRest": "false",
-					"ClearWhenAttacks": "false",
-					"ClearOnDeath": "false",
-					"HideFromCombatTooltip": "false",
-					"HideFromCombatLog": "false",
-					"HideFromUI": "false",
-					"HideIfNoValue": "false",
-					"VisualEffects": [],
-					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
-					"AttackFilter": {
-						"KeywordsIDs": [],
-						"KeywordLogic": "Or",
-						"Race": "None",
-						"IsKith": "false",
-						"HealthPercentage": 0,
-						"HealthOperator": "EqualTo",
-						"Range": "None",
-						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
-						"Source": "None",
-						"DefendedBy": "None",
-						"Empowered": "false",
-						"Disengagement": "false",
-						"Stealthed": "false",
-						"UseStealthLinger": "false",
-						"PowerLevel": 0,
-						"PowerLevelOperator": "EqualTo",
-						"ChanceToApply": 1,
-						"AttackHostility": "Default",
-						"TargetType": "None"
-					},
-					"AttackTargetFilter": {
-						"KeywordsIDs": [],
-						"KeywordLogic": "Or",
-						"Race": "None",
-						"IsKith": "false",
-						"HealthPercentage": 0,
-						"HealthOperator": "EqualTo",
-						"Distance": 0,
-						"DistanceOperator": "EqualTo",
-						"HasDOT": "false",
-						"IsMarked": "false",
-						"TargetHostility": "Default"
-					},
-					"ExtraValue": 0,
-					"OverridePenetration": 0,
-					"DamageTypeValue": "All",
-					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
-					"RaceValue": "None",
-					"StatusEffectTypeValue": "None",
-					"ItemValueID": "00000000-0000-0000-0000-000000000000",
-					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
-					"StatusEffectsValueIDs": [],
-					"AttackValueID": "575fd1f6-dae8-4180-a1a5-89c23cb26754",
-					"AttackOverrideValue": "None",
-					"EventValue": "OnHitOrCriticallyHit",
-					"ClassValueID": "00000000-0000-0000-0000-000000000000",
-					"WeaponTypeValue": "None",
-					"AttackHitType": "None",
-					"SkillValueID": "00000000-0000-0000-0000-000000000000",
-					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
-					"BedRestDaysMinimum": 0,
-					"BedRestDaysMaximum": 0
-				}
-			]
-		},
-		{
-			"$type": "Game.GameData.AttackAOEGameData, Assembly-CSharp",
-			"DebugName": "Archmage_Of_Divine_Fire_Pulse_Attack",
-			"ID": "575fd1f6-dae8-4180-a1a5-89c23cb26754",
-			"Components": [
-				{
-					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
-					"KeywordsIDs": [],
-					"AttackDistance": 5,
-					"MinAttackDistance": 0,
-					"AttackVariationID": "35abdf41-fc3f-4310-8d5d-5d7da644affc",
-					"UseParentEquippableHand": "false",
-					"CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
-					"RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
-					"OverrideTacticalActionType": "None",
-					"ImpactDelay": 0,
-					"ForcedTarget": "None",
-					"AffectedTargetType": "Hostile",
-					"AffectedTargetConditional": {
-						"Conditional": {
-							"Operator": 0,
-							"Components": []
-						}
-					},
-					"AffectedTargetDeathState": "Alive",
-					"HostilityOverride": "Default",
-					"PushDistance": 0,
-					"FaceTarget": "true",
-					"AccuracyBonus": 0,
-					"PenetrationRating": 9,
-					"DamageData": {
-						"DamageType": "Burn",
-						"AlternateDamageType": "None",
-						"Minimum": 5,
-						"Maximum": 10,
-						"TacticalMinimumOverride": 0,
-						"TacticalMaximumOverride": 0,
-						"DamageProcs": []
-					},
-					"RequiresHitObject": "true",
-					"StatusEffectKeywordsIDs": [],
-					"StatusEffectsIDs": [
-						"f206ad5d-58ad-43d8-852d-dac8888a5887"
-					],
-					"RandomizeStatusEffect": "false",
-					"CanGraze": "false",
-					"CanCrit": "true",
-					"DefendedBy": "Reflex",
-					"AfflictionsDefendedBy": "None",
-					"AfflictionApplicationModifier": "None",
-					"SubstituteHitVisualEffect": "",
-					"VisualEffects": [
-						{
-							"VisualEffect": "prefabs/effects/abilities/priest/fx_pillar_of_faith_aoe.prefab",
-							"AttachPoint": "Ground",
-							"AttachMode": "Attach",
-							"MeshType": "None",
-							"Loop": "false",
-							"Event": "OnLaunch"
-						}
-					],
-					"AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
-					"ExtraAttackID": "00000000-0000-0000-0000-000000000000",
-					"LaunchBone": "RightWeapon",
-					"HitBone": "Chest",
-					"OnHitShakeDuration": "None",
-					"OnHitShakeStrength": "None",
-					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
-					"AllReactNoise": "false",
-					"InterruptsOn": "None",
-					"InterruptType": "Normal",
-					"TargetAngle": 0,
-					"ApplyOnceOnly": "false",
-					"PathsToTarget": "true",
-					"HideFromCombatLog": "false",
-					"AdditionalAttackOnTooltip": "false",
-					"DoesNotApplyDamage": "false",
-					"TreatAsWeapon": "false",
-					"BounceData": {
-						"Bounces": 0,
-						"Multiplier": 0.5,
-						"Range": 5,
-						"InRangeOrder": "false",
-						"NoRepeatTargets": "false",
-						"AlwaysBounceAtEnemies": "false",
-						"Delay": 0,
-						"NeverBounce": "false"
-					},
-					"AttackValidityConditional": {
-						"Conditional": {
-							"Operator": 0,
-							"Components": []
-						}
-					}
-				},
-				{
-					"$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
-					"LaunchAttackOnCollision": "false",
-					"ProjectileCount": 1,
-					"IgnoreMagicDefense": "false",
-					"ProjectileConeAngle": 360,
-					"ProjectilePrefab": "prefabs/projectiles/invisible_projectile.prefab",
-					"IsMultiHit": "false",
-					"MultiHitTravelDist": 10,
-					"MultiHitMaxHits": 0,
-					"LaunchSource": "Caster",
-					"LaunchOffset": {
-						"x": 0,
-						"y": 0,
-						"z": 0
-					},
-					"LaunchOffsetRandom": {
-						"x": 0,
-						"y": 0,
-						"z": 0
-					}
-				},
-				{
-					"$type": "Game.GameData.AttackAOEComponent, Assembly-CSharp",
-					"BlastSize": "Override",
-					"BlastRadiusOverride": 5,
-					"DamageAngle": 360,
-					"ExcludePrimaryTarget": "false",
-					"IgnoreParentTarget": "false",
-					"ExcludeSelf": "false",
-					"BlastPhysicsForce": 500,
-					"PushFromCaster": "false"
-				}
-			]
-		},
-		{
-			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-			"DebugName": "Archmage_Of_Divine_Fire_KnockDown",
-			"ID": "f206ad5d-58ad-43d8-852d-dac8888a5887",
-			"Components": [
-				{
-					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
-					"StatusEffectType": "KnockedDown",
-					"OverrideDescriptionString": -1,
-					"OverrideDescriptionStringTactical": -1,
-					"UseStatusEffectValueAs": "None",
-					"BaseValue": 0,
-					"DynamicValue": {
-						"Stat": "None",
-						"SkillDataID": "00000000-0000-0000-0000-000000000000",
-						"ClassID": "00000000-0000-0000-0000-000000000000",
-						"MultiplyBy": 1,
-						"Operator": "Add"
-					},
-					"KeywordsIDs": [],
-					"DurationType": "UseDurationTime",
-					"Duration": 2,
 					"MaxStackQuantity": 0,
 					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
 					"ApplicationType": "ApplyOnStart",
@@ -985,11 +729,166 @@
 					"ClearOnFoodRest": "false",
 					"ClearWhenAttacks": "false",
 					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "true",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "true",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "Weapon",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [
+						"575fd1f6-dae8-4180-a1a5-89c23cb26754"
+					],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnScoringGrazeHitOrCriticalHit",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Archmage_Of_Divine_Blind",
+			"ID": "575fd1f6-dae8-4180-a1a5-89c23cb26754",
+			"Components": [
+				{
+					"$type": "Game.GameData.AfflictionComponent, Assembly-CSharp",
+					"DisplayName": 1855,
+					"Icon": "gui/icons/keywords/per_neg_3.png",
+					"AfflictionTypeID": "5d192433-3732-42fb-8bd2-9043dbf5c4e9",
+					"IsThinUI": "false"
+				},
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "None",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "Child",
+					"BaseValue": 0,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [
+						"4cb9e779-269f-42e3-8855-feabb837d50c",
+						"147667b0-6ef2-444e-b0e4-97622f3d8329"
+					],
+					"DurationType": "UseDurationTime",
+					"Duration": 10,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "true",
+					"ClearOnCombatEnd": "true",
+					"ClearOnRest": "true",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
 					"HideFromCombatTooltip": "false",
 					"HideFromCombatLog": "false",
 					"HideFromUI": "false",
 					"HideIfNoValue": "false",
-					"VisualEffects": [],
+					"VisualEffects": [
+						{
+							"VisualEffect": "prefabs/effects/afflictions/fx_affliction_blinded.prefab",
+							"AttachPoint": "Head",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/wizzard/fx_combusting_wounds_hit_se.prefab",
+							"AttachPoint": "Chest",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Loop": "true",
+							"Event": "OnStart"
+						}
+					],
 					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
 					"AttackFilter": {
 						"KeywordsIDs": [],
@@ -1033,7 +932,15 @@
 					"StatusEffectTypeValue": "None",
 					"ItemValueID": "00000000-0000-0000-0000-000000000000",
 					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
-					"StatusEffectsValueIDs": [],
+					"StatusEffectsValueIDs": [
+						"85d73fd8-e1a9-4cbe-b2fc-20320085558f",
+						"280e6095-101b-43fd-ab82-197fd81630b5",
+						"fe62d3e8-663b-4a56-afa6-ad39f3807880",
+						"31a370c1-ed10-46b6-9cc8-df2cae02dc26",
+						"5d21ee2b-4ba6-4af4-bcc9-4ff15a01181c",
+						"c55b9951-a040-4856-828a-00ec17d6b8d0",
+						"1dbeff21-d432-477a-a946-86a3127bf262"
+					],
 					"AttackValueID": "00000000-0000-0000-0000-000000000000",
 					"AttackOverrideValue": "None",
 					"EventValue": "OnApply",

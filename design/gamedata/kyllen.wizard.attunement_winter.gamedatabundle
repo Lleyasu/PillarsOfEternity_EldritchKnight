@@ -862,7 +862,7 @@
 					"TreatAsWeapon": "false",
 					"BounceData": {
 						"Bounces": 3,
-						"Multiplier": 0.75,
+						"Multiplier": 1.0,
 						"Range": 10,
 						"InRangeOrder": "false",
 						"NoRepeatTargets": "true",
@@ -883,7 +883,7 @@
 					"ProjectileCount": 1,
 					"IgnoreMagicDefense": "false",
 					"ProjectileConeAngle": 145,
-					"ProjectilePrefab": "prefabs/projectiles/paladin/fx_healing_chain_projectile.prefab",
+					"ProjectilePrefab": "prefabs/projectiles/wizard/fx_arcane_assault_projectile.prefab",
 					"IsMultiHit": "false",
 					"MultiHitTravelDist": 10,
 					"MultiHitMaxHits": 0,
